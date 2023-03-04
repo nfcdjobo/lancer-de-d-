@@ -1,0 +1,94 @@
+body{
+    background-color: rgb(55, 187, 22);
+}
+
+.titre{
+    max-width: 25em;
+    margin: 2.5em auto;
+    text-align: center;
+    padding: 1em ;
+    border: .2em solid rgb(255, 255, 255);
+    font-size: 100%;
+    font-weight: bold;
+    background-color: rgb(182, 172, 172);
+}
+
+.contenaire{ 
+background-color: rgba(117, 111, 111, 0.568);
+border: 0.5em solid rgb(255, 255, 255);
+min-height: 13em;
+    margin-top: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+
+}
+
+.inner-de{
+    background-color: white;
+    max-width: 5.4em;
+    max-height: 5.4em;
+    margin: 1em auto;
+    border: 0.4em solid red;
+    border-radius: 1.2em;
+    
+}
+
+img{
+    max-width: 5em;
+    max-height: 5em;
+    border-radius: 1.2em;
+    background-size: cover cover;
+    cursor: pointer;
+}
+
+.number{
+    border: 0.1em solid rgb(0, 0, 0);
+    text-align: center;
+    margin: 30% auto;
+    color: rgb(255, 255, 255);
+    font-size: 2.5em;
+    font-weight: bold;
+    border-radius: 7em;
+    cursor: pointer;
+}
+
+.ajout{
+    background-color: rgba(92, 85, 85, 0.781);
+    color: white;
+    width: 10em;
+    margin: 2em auto;
+    text-align: center;
+    padding: .5em 1.3em;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: .88em;
+}
+
+.ajout:hover{
+    background-color: rgb(250, 6, 128);
+    color: rgb(0, 0, 0);
+    width: 10em;
+    margin: 2em auto;
+    text-align: center;
+    padding: .5em 1.3em;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.score{
+    background-color: rgb(255, 255, 255);
+    width: 7em;
+    margin: 2em auto;
+    padding: .5em 1.3em;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 1em;
+}
+
+#somme{
+    color: rgb(255, 0, 0);
+}
