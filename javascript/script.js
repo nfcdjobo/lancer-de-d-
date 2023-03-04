@@ -106,7 +106,7 @@ function lanceeDe(){
         }
     });
     document.getElementById("somme").textContent = sommation;
-    alert(`La somme des valeur des dé est ${sommation}`);
+    alert(`La somme des valeurs des dé est: ${sommation}`);
 }
 
 document.getElementById("add").addEventListener("click", ajouterDe);
