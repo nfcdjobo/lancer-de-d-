@@ -1,5 +1,7 @@
 body{
-    background-color: rgb(55, 187, 22);
+    background-image: url("./../images/font.jpg");
+    background-size: cover cover;
+    filter: brightness(0.8);
 }
 
 .titre{
@@ -11,39 +13,50 @@ body{
     border: .2em solid rgb(255, 255, 255);
     font-size: 100%;
     font-weight: bold;
+    filter: brightness(1);
 }
 
-.contenaire{ 
-background-color: rgba(117, 111, 111, 0.568);
-border: 0.5em solid rgb(255, 255, 255);
-min-height: 13em;
-    margin-top: 1.5em;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
 
+.contenaire{
+    background-color: rgba(0, 0, 0, 0.5);
+    display: grid;
+    /* border: 0.4em solid rgb(255, 255, 255); */
+    justify-content: center;
+    width: 60%;
+    min-height: 16em;
+    margin: 0.738em auto;
+    grid-template-columns: repeat(auto-fill, 6.25em);
+    grid-gap:1.5em;
+    padding: 1em;
+    filter: brightness(1);
 }
+
 
 .inner-de{
+    height: auto;
     background-color: white;
-    max-width: 5.4em;
-    max-height: 5.4em;
-    margin: 1em auto;
-    border: 0.4em solid red;
+    width: 100%;
+    height: 30%;
+    margin: 1% 1%;
+    border: 0.4em solid rgb(255, 255, 255);
     border-radius: 1.2em;
-    
+    filter: brightness(1);
 }
 
 img{
-    max-width: 5em;
-    max-height: 5em;
-    border-radius: 1.2em;
+    width: 100%;
+    height: 100%;
+    border-radius: 1em;
     background-size: cover cover;
     cursor: pointer;
+    filter: brightness(1);
 }
 
 .number{
-    border: 0.1em solid rgb(0, 0, 0);
+    border: 0.1em solid rgb(255, 0, 0);
+    background-image: url("./../images/AUT-583875-2.webp");
+    background-size: cover;
+    width: 1em;
     text-align: center;
     margin: 30% auto;
     color: rgb(255, 255, 255);
@@ -51,54 +64,101 @@ img{
     font-weight: bold;
     border-radius: 7em;
     cursor: pointer;
+    filter: brightness(1);
+    box-sizing: border-box;
+    box-shadow: 7px 1px 1px red;
+}
+
+#number-1{
+    background-image: url("./../images/tout.png");
+    background-size: cover;
+    filter: brightness(1);
+}
+
+#number-2{
+    background-image: url("./../images/tout.png");
+    background-size: cover;
+    filter: brightness(1);
+}
+
+#number-3{
+    background-image: url("./../images/tout.png");
+    background-size: cover;
+    filter: brightness(1);
+}
+
+#number-4{
+    background-image: url("./../images/tout.png");
+    background-size: cover;
+    filter: brightness(1);
+}
+
+#number-5{
+    background-image: url("./../images/tout.png");
+    background-size: cover;
+    filter: brightness(1);
+}
+
+#number-6{
+    background-image: url("./../images/tout.png");
+    background-size: cover;
+    filter: brightness(1);
 }
 
 .ajout{
     background-color: rgba(92, 85, 85, 0.781);
     color: white;
     width: 10em;
-    margin: 2em auto;
+    margin: 1em auto;
     text-align: center;
     padding: .5em 1.3em;
     font-size: 1.2em;
     font-weight: bold;
     cursor: pointer;
     border-radius: .88em;
+    filter: brightness(1);
 }
 
 .ajout:hover{
     background-color: rgb(250, 6, 128);
     color: rgb(0, 0, 0);
     width: 10em;
-    margin: 2em auto;
+    margin: 1em auto;
     text-align: center;
     padding: .5em 1.3em;
     font-size: 1.2em;
     font-weight: bold;
     cursor: pointer;
+    border-radius: .88em;
+    filter: brightness(1);
 }
 
 .score{
     background-color: rgb(255, 255, 255);
     width: 7em;
-    margin: 2em auto;
+    margin: 1em auto;
     padding: .5em 1.3em;
     font-size: 1.5em;
     font-weight: bold;
     text-align: center;
     border-radius: 1em;
+    filter: brightness(1);
 }
 
 #somme{
     color: rgb(255, 0, 0);
+    filter: brightness(1);
 }
 
 .nb{
+    color: rgb(255, 255, 255);
     text-align: center;
     margin: 1em auto;
     font-size: 1.5em;
+    filter: brightness(1);
 }
 
 strong{
-    color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
+    filter: brightness(1);
 }
