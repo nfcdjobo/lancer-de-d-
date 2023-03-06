@@ -1,20 +1,35 @@
+
 *{
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style: none;
-    overflow-x:clip; 
+    /* overflow-x: clip;  */
 }
 
 body{
     background-image: url("./../images/font.jpg");
+    background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover cover;
+    max-width: 100%;
+    background-size: cover;
     filter: brightness(0.8);
 }
 
+.content{
+    /* max-width: 60em; */
+    margin-left: auto;
+    margin-right: auto;
+
+    justify-content: center;
+    align-items: center;
+    /* max-height: 50%; */
+}
+
+
+
 .titre{
-    max-width: 60%;
+    max-width:30em;
     margin: 2% auto;
     text-align: center;
     padding: 1em ;
@@ -28,13 +43,13 @@ body{
 
 .contenaire{
     background-color: rgba(0, 0, 0, 0.5);
+    max-width:40em;
     display: grid;
     justify-content: center;
-    width: 60%;
-    min-height: 16em;
+    min-height: 10em;
     margin: 0.738em auto;
-    grid-template-columns: repeat(auto-fill, 6.25em);
-    grid-gap:1.5em;
+    grid-template-columns: repeat(auto-fill, 4.25em);
+    grid-gap:2em;
     padding: 1em;
     filter: brightness(1);
 }
@@ -43,17 +58,17 @@ body{
 .inner-de{
     height: auto;
     background-color: white;
-    width: 100%;
-    height: 30%;
-    margin: 1% 1%;
+    width: 4.25em;
+    height: 4.25em;
     border: 0.4em solid rgb(255, 255, 255);
     border-radius: 1.2em;
     filter: brightness(1);
 }
 
+
 img{
-    width: 100%;
-    height: 100%;
+    width: 4.25em;
+    height: 4.25em;
     border-radius: 2%;
     background-size: cover cover;
     cursor: pointer;
@@ -61,8 +76,6 @@ img{
 }
 
 .number{
-    border: 0.1em solid rgb(255, 0, 0);
-    background-image: url("./../images/AUT-583875-2.webp");
     background-size: cover;
     width: 1em;
     text-align: center;
@@ -114,16 +127,16 @@ img{
 }
 
 .ajout{
-    background-color: rgba(92, 85, 85, 0.781);
+    background-color: rgb(49, 47, 47);
     color: white;
     width: 15%;
     margin: 1% auto;
     text-align: center;
     padding: .3% 1%;
-    font-size: 1%;
+    font-size: 1.5em;
     font-weight: bold;
     cursor: pointer;
-    border-radius: 1%;
+    border-radius: 10px;
     filter: brightness(1)
 }
 
@@ -133,12 +146,12 @@ img{
     width: 15%;
     margin: 1% auto;
     text-align: center;
-    padding: 0.3% 1%;
-    font-size: 1%;
+    padding: .3% 1%;
+    font-size: 1.5em;
     font-weight: bold;
     cursor: pointer;
-    border-radius: 1%;
-    filter: brightness(1);
+    border-radius: 10px;
+    filter: brightness(1)
 }
 
 .score{
@@ -154,21 +167,361 @@ img{
 }
 
 #somme{
-    position: relative;
     color: rgb(255, 0, 0);
     filter: brightness(1);
 }
 
 .nb{
-    position: relative;
-    top: -7em;
     color: rgb(255, 255, 255);
     text-align: center;
-    margin: 20% auto;
+    margin: 3% auto;
     filter: brightness(1);
 }
 
 strong{
     color: rgb(255, 0, 0);
     filter: brightness(1);
+}
+
+@media only screen and (max-width:599px){
+    .contenaire{
+        background-color: rgb(49, 47, 47);
+        max-width:80%;
+        display: grid;
+        justify-content: center;
+        min-height: 7em;
+        margin: 0.738em auto;
+        grid-template-columns: repeat(auto-fill, 3.25em);
+        grid-gap:1em;
+        padding: 1em;
+        filter: brightness(1);
+    }
+
+    .inner-de{
+    height: auto;
+    background-color: white;
+    width: 3.25em;
+    height: 3.25em;
+    border: 0.4em solid rgb(255, 255, 255);
+    border-radius: 1.2em;
+    filter: brightness(1);
+}
+
+    img{
+    width: 3.25em;
+    height: 3.25em;
+    border-radius: 2%;
+    background-size: cover cover;
+    cursor: pointer;
+    filter: brightness(1);
+}
+
+.number{
+    width: 1em;
+    text-align: center;
+    margin: 30% auto;
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    font-weight: 200;
+    border-radius: 7em;
+    cursor: pointer;
+    filter: brightness(1);
+    box-sizing: border-box;
+    box-shadow: 7px 1px 1px red;
+}
+
+.ajout{
+    background-color: rgb(49, 47, 47);
+    color: white;
+    width: 24%;
+    margin: 1% auto;
+    text-align: center;
+    padding: .2em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    filter: brightness(1)
+}
+
+.ajout:hover{
+    background-color: rgb(250, 6, 128);
+    color: rgb(0, 0, 0);
+    width: 24%;
+    margin: 1em auto;
+    text-align: center;
+    padding: .2em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    filter: brightness(1)
+}
+
+.score{
+    background-color: rgb(255, 255, 255);
+    width: 15%;
+    margin: 1em auto;
+    padding: .2em;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 1em;
+    filter: brightness(1);
+}
+}
+
+
+@media only screen and (max-width:489px){
+    .contenaire{
+        background-color: rgb(49, 47, 47);
+        max-width:80%;
+        height: auto;
+        display: grid;
+        justify-content: center;
+        min-height: 5em;
+        margin: 0.738em auto;
+        grid-template-columns: repeat(auto-fill, 2.25em);
+        grid-gap:1em;
+        padding: 1em;
+        filter: brightness(1);
+    }
+
+    .inner-de{
+    height: auto;
+    background-color: white;
+    width: 2.25em;
+    height: 2.25em;
+    border: 0.4em solid rgb(255, 255, 255);
+    border-radius: 1.2em;
+    filter: brightness(1);
+}
+
+ 
+
+    img{
+    width: 2.25em;
+    height: 2.25em;
+    border-radius: 2%;
+    background-size: cover cover;
+    cursor: pointer;
+    filter: brightness(1);
+}
+
+.number{
+    width: 1em;
+    text-align: center;
+    margin: 30% auto;
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    font-weight: 200;
+    border-radius: 7em;
+    cursor: pointer;
+    filter: brightness(1);
+    box-sizing: border-box;
+    box-shadow: 7px 1px 1px red;
+}
+
+
+.ajout{
+    background-color: rgb(49, 47, 47);
+    color: white;
+    width: 24%;
+    margin: 1% auto;
+    text-align: center;
+    padding: .2em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    filter: brightness(1)
+}
+
+.ajout:hover{
+    background-color: rgb(250, 6, 128);
+    color: rgb(0, 0, 0);
+    width: 24%;
+    margin: 1em auto;
+    text-align: center;
+    padding: .2em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    filter: brightness(1)
+}
+
+.score{
+    background-color: rgb(255, 255, 255);
+    width: 15%;
+    margin: 1em auto;
+    padding: .2em;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 1em;
+    filter: brightness(1);
+}
+}
+
+@media only screen and (max-width:370px){
+    .contenaire{
+        background-color: rgb(49, 47, 47);
+        max-width:60%;
+        display: grid;
+        justify-content: center;
+        min-height: 3em;
+        margin: 0.738em auto;
+        grid-template-columns: repeat(auto-fill, 1em);
+        grid-gap:1em;
+        padding: 1em;
+        filter: brightness(1);
+    }
+
+    .inner-de{
+    height: auto;
+    background-color: white;
+    width: 1em;
+    height: 1em;
+    border: 0.4em solid rgb(255, 255, 255);
+    border-radius: 1.2em;
+    filter: brightness(1);
+}
+
+    img{
+    width: 1em;
+    height: 1em;
+    border-radius: 2%;
+    background-size: cover cover;
+    cursor: pointer;
+    filter: brightness(1);
+}
+
+.number{
+    background-size: cover;
+    width: 1em;
+    text-align: center;
+    margin: 30% auto;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border-radius: 7em;
+    cursor: pointer;
+    filter: brightness(1);
+    box-sizing: border-box;
+    box-shadow: 7px 1px 1px red;
+}
+
+.ajout{
+    background-color: rgb(49, 47, 47);
+    color: white;
+    width: 24%;
+    margin: 1% auto;
+    text-align: center;
+    padding: .2em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    filter: brightness(1)
+}
+
+.ajout:hover{
+    background-color: rgb(250, 6, 128);
+    color: rgb(0, 0, 0);
+    width: 24%;
+    margin: 1em auto;
+    text-align: center;
+    padding: .2em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    filter: brightness(1)
+}
+
+.score{
+    background-color: rgb(255, 255, 255);
+    width: 15%;
+    margin: 1em auto;
+    padding: .2em;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 1em;
+    filter: brightness(1);
+}
+}
+
+
+@media only screen and (max-width:293px){
+    .contenaire{
+        background-color: rgb(49, 47, 47);
+        max-width:100%;
+        display: grid;
+        justify-content: center;
+        min-height: 3em;
+        margin: 0.738em auto;
+        grid-template-columns: repeat(auto-fill, 1em);
+        grid-gap:1em;
+        padding: 1em;
+        filter: brightness(1);
+    }
+
+    .inner-de{
+    height: auto;
+    background-color: white;
+    width: 1em;
+    height: 1em;
+    border: 0.4em solid rgb(255, 255, 255);
+    border-radius: 1.2em;
+    filter: brightness(1);
+}
+
+    img{
+    width: 1em;
+    height: 1em;
+    border-radius: 2%;
+    background-size: cover cover;
+    cursor: pointer;
+    filter: brightness(1);
+}
+
+.number{
+    background-size: cover;
+    width: 1em;
+    text-align: center;
+    margin: 30% auto;
+    color: rgb(255, 255, 255);
+    border-radius: 7em;
+    cursor: pointer;
+    filter: brightness(1);
+    box-sizing: border-box;
+    box-shadow: 7px 1px 1px red;
+}
+
+.ajout{
+    background-color: rgb(49, 47, 47);
+    color: white;
+    width: 24%;
+    margin: 1% auto;
+    text-align: center;
+    padding: .2em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    filter: brightness(1)
+}
+
+.ajout:hover{
+    background-color: rgb(250, 6, 128);
+    color: rgb(0, 0, 0);
+    width: 30%;
+    margin: 1em auto;
+    text-align: center;
+    padding: .2em;
+    cursor: pointer;
+    border-radius: 10px;
+    filter: brightness(1)
+}
+
+.score{
+    background-color: rgb(255, 255, 255);
+    width: 30%;
+    margin: 1em auto;
+    padding: 0.2em;
+    text-align: center;
+    border-radius: 1em;
+    filter: brightness(1);
+}
 }
