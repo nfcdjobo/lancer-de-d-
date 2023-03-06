@@ -172,10 +172,12 @@ img{
 }
 
 .nb{
+    background-color: rgba(0, 0, 0, 0.582);
     color: rgb(255, 255, 255);
     text-align: center;
     margin: 3% auto;
     filter: brightness(1);
+    /* font-weight: bold; */
 }
 
 strong{
