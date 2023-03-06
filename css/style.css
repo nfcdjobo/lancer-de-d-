@@ -90,7 +90,7 @@ img{
 .ajout{
     background-color: rgb(49, 47, 47);
     color: white;
-    width: 15%;
+    width: 7em;
     margin: 1% auto;
     text-align: center;
     padding: .3% 1%;
@@ -104,7 +104,7 @@ img{
 .ajout:hover{
     background-color: rgb(250, 6, 128);
     color: rgb(0, 0, 0);
-    width: 15%;
+    width: 7em;
     margin: 1% auto;
     text-align: center;
     padding: .3% 1%;
@@ -117,13 +117,13 @@ img{
 
 .score{
     background-color: rgb(255, 255, 255);
-    width: 7%;
+    width: 7em;
     margin: 1% auto;
     padding: .50% 5%;
     font-size: 100%;
     font-weight: bold;
     text-align: center;
-    border-radius: 1em;
+    border-radius: 10px;
     filter: brightness(1);
 }
 
@@ -139,6 +139,8 @@ img{
     margin: 3% auto;
     filter: brightness(1);
 }
+
+
 
 strong{
     color: rgb(255, 0, 0);
@@ -178,7 +180,7 @@ strong{
 }
 
 .ajout{
-    width: 24%;
+    width: 30%;
     margin: 1% auto;
     padding: .2em;
     font-weight: bold;
@@ -186,7 +188,7 @@ strong{
 }
 
 .ajout:hover{
-    width: 24%;
+    width: 30%;
     margin: 1em auto;
     padding: .2em;
     font-weight: bold;
@@ -194,7 +196,7 @@ strong{
 }
 
 .score{
-    width: 15%;
+    width: 30%;
     margin: 1em auto;
     padding: .2em;
     font-weight: bold;
@@ -241,7 +243,7 @@ strong{
 
 
 .ajout{
-    width: 24%;
+    width: 30%;
     margin: 1% auto;
     padding: .2em;
     font-weight: bold;
@@ -249,7 +251,7 @@ strong{
 }
 
 .ajout:hover{
-    width: 24%;
+    width: 30%;
     margin: 1em auto;
     padding: .2em;
     font-weight: bold;
@@ -257,7 +259,7 @@ strong{
 }
 
 .score{
-    width: 15%;
+    width: 30%;
     margin: 1em auto;
     padding: .2em;
     font-weight: bold;
@@ -306,7 +308,7 @@ strong{
 }
 
 .ajout:hover{
-    width: 24%;
+    width: 30%;
     margin: 1em auto;
     padding: .2em;
     font-weight: bold;
@@ -314,7 +316,7 @@ strong{
 }
 
 .score{
-    width: 15%;
+    width: 30%;
     margin: 1em auto;
     padding: .2em;
     font-weight: bold;
@@ -353,7 +355,7 @@ strong{
 }
 
 .ajout{
-    width: 24%;
+    width: 50%;
     margin: 1% auto;
     padding: .2em;
     font-weight: bold;
@@ -361,14 +363,14 @@ strong{
 }
 
 .ajout:hover{
-    width: 30%;
+    width: 50%;
     margin: 1em auto;
     padding: .2em;
     border-radius: 10px;
 }
 
 .score{
-    width: 30%;
+    width: 80%;
     margin: 1em auto;
     padding: 0.2em;
     border-radius: 1em;
